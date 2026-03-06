@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://interviewready.in/sitemap.xml
+

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  /* Dark theme (black theme) */
+  --color-brand-bg: #0f172a;        /* Background → #0F172A */
+  --color-brand-surface: #1e293b;   /* Surface → #1E293B */
+  --color-brand-card: #1e293b;
+  --color-brand-border: #334155;    /* Border → #334155 */
+  --color-brand-accent: #38bdf8;
+  --color-brand-accentHover: #7dd3fc;
+  --color-brand-accentDim: #0c2a4a;
+  --color-brand-text: #f1f5f9;      /* Text → #F1F5F9 */
+  --color-brand-muted: #64748b;
+  --color-brand-white: #ffffff;
+  --color-brand-success: #34d399;
+  --color-brand-warning: #fbbf24;
+  --color-brand-danger: #f87171;
+}
+
+:root {
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+body {
+  @apply bg-brand-bg text-brand-text antialiased;
+  font-family: var(--font-body);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Simple container utility for consistent widths */
+.ir-container {
+  @apply max-w-6xl mx-auto px-4;
+}
+
